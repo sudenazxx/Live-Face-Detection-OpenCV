@@ -7,6 +7,8 @@ Bu proje, bilgisayar mühendisliği yolculuğumda görüntü işleme (Computer V
 * Dijital görüntüleri matrisler ve pikseller seviyesinde işleme mantığı.
 * `Haarcascades` modelleri ile nesne/yüz tespiti algoritmasının nasıl çalıştığı.
 * VS Code terminalindeki dosya yolu hatalarını analiz etme ve çözme.
+* Görüntü işlemede ROI (Region of Interest) mantığı ile bölgesel optimizasyon yapmayı.
+*  Aynı kare içinde birden fazla nesneyi (Multi-detection) eşzamanlı takip etmeyi.
 
 ## 🚀 Projeyi Çalıştırma
 Projenizi bilgisayarınızda çalıştırmak için:
