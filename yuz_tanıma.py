@@ -22,6 +22,23 @@ while True:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 2)
         cv2.putText(frame, "Insan", (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 0, 255), 2)
 
+    # Tespit edilen her yüzün etrafına bir kare çiziyoruz
+    for (x, y, w, h) in faces:
+        # Yüzün etrafına yeşil kare çiziyoruz
+        cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+        cv2.putText(frame, "Insan", (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
+        
+        
+        roi_gray = gray[y:y+h, x:x+w]    # Gri görüntüdeki yüz bölgesi
+        roi_color = frame[y:y+h, x:x+w]  # Renkli görüntüdeki yüz bölgesi
+        
+        # Kırptığımız o yüz bölgesinin içinde gözleri arıyoruz
+        eyes = eye_cascade.detectMultiScale(roi_gray)
+        
+        # Bulunan her gözün etrafına mavi bir kare çiziyoruz
+        for (ex, ey, ew, eh) in eyes:
+            cv2.rectangle(roi_color, (ex, ey), (ex+ew, ey+eh), (255, 0, 0), 2)
+
     # Sonucu ekranda gösteriyoruz
     cv2.imshow('Sudenaz Görüntü İşleme Projesi', frame)
 
