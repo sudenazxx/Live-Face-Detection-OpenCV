@@ -1,16 +1,17 @@
-# 📸 Anlık Yüz Takibi Projesi (OpenCV)
+# 💼 Antre-Vio-Talent Project (User CV)
 
-Bu proje, bilgisayar mühendisliği yolculuğumda görüntü işleme (Computer Vision) alanında attığım ilk adımdır. Python ve OpenCV kütüphanesini kullanarak web kamerasından gelen canlı görüntüyü işler ve yüz tespiti yapar.
+A professional web application designed to streamline user CV creation and portfolio management. This platform allows users to build, customize, and showcase their professional profiles efficiently.
 
-## 🛠️ Neler Öğrendim?
-* `OpenCV` kütüphanesi ile kamera kontrolünü sağlama.
-* Dijital görüntüleri matrisler ve pikseller seviyesinde işleme mantığı.
-* `Haarcascades` modelleri ile nesne/yüz tespiti algoritmasının nasıl çalıştığı.
-* VS Code terminalindeki dosya yolu hatalarını analiz etme ve çözme.
-* Görüntü işlemede ROI (Region of Interest) mantığı ile bölgesel optimizasyon yapmayı.
-*  Aynı kare içinde birden fazla nesneyi (Multi-detection) eşzamanlı takip etmeyi.
+## 👥 Team & My Contributions
+This project was developed as a collaborative group effort. My specific responsibilities and contributions to the codebase were:
+- 🛠️ Developed core features for both frontend and backend architectures.
+- 🗄️ Integrated and configured MongoDB database setup for seamless data flow.
+- 🎨 Designed and developed user profile pages and dashboard panels.
+- 🔐 Implemented dynamic navigation routes and a secure user authentication system.
 
-## 🚀 Projeyi Çalıştırma
-Projenizi bilgisayarınızda çalıştırmak için:
-1. `pip install opencv-python` komutu ile kütüphaneyi kurun.
-2. `yuz_tanima.py` dosyasını çalıştırıp kameranın tadını çıkarın!
+## 🚀 Tech Stack
+- **Frontend:** Next.js / React
+- **Backend & Database:** Node.js & MongoDB
+
+## 📸 App Preview
+*(You can drag and drop your project screenshots or UI videos right below this line to showcase the app visually)*
